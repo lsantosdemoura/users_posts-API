@@ -6,8 +6,6 @@ from rest_framework import status
 
 
 class UsersPosts(APIView):
-    # TODO: fazer deploy no heroku
-    # TODO: adicionar swagger
     def get(self, request, format=None):
         email = request.GET.get('email')
         response_user = requests.get(f'https://jsonplaceholder.typicode.com/users?email={email}')
