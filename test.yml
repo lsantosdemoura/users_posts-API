@@ -10,3 +10,4 @@ services:
       - PYTHONWARNINGS=ignore
       - DJANGO_SETTINGS_MODULE=users_posts.settings_test
       - SECRET_KEY=test_secret_key
+      - ALLOWED_HOSTS=127.0.0.1, .localhost
